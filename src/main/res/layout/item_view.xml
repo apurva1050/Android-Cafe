@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/imageviewR"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/donutimages" />
+
+
+
+    <TextView
+        android:id="@+id/donutname1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageviewR"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="donutName" />
+
+    <TextView
+        android:id="@+id/donutcost"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donutname1"
+        android:layout_toEndOf="@id/imageviewR"
+        android:textColor="@color/black"
+        tools:text="cost" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageviewR"
+        android:layout_marginTop="47dp"
+        android:background="@color/purple_200"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="39dp"
+        android:text="@string/increase" />
+
+</RelativeLayout>

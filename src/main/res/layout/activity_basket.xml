@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".basketActivity">
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/tv_border"
+        android:gravity="center"
+        android:text="@string/subTotal"
+        android:textColor="#039BE5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tax"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/tv_border"
+        android:gravity="center"
+        android:text="@string/tax"
+        android:textColor="#039BE5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalWithTax"
+        android:layout_width="230dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tv_border"
+        android:gravity="center"
+        android:text="@string/YourTotal"
+        android:textColor="#039BE5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/confirmOrder"
+        android:layout_width="107dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="92dp"
+        android:onClick="confirmOrder"
+        android:text="@string/confirmOrder"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <ListView
+        android:id="@+id/listViewOrder"
+        android:layout_width="329dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="17dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/subtotalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/carView"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="@string/cartImage"
+        app:layout_constraintBottom_toTopOf="@+id/listViewOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cartimage" />
+
+    <TextView
+        android:id="@+id/subtotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="323dp"
+        android:text="@string/subtotalText"
+        app:layout_constraintBottom_toTopOf="@+id/subtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/taxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="202dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/taxText"
+        app:layout_constraintBottom_toTopOf="@+id/tax"
+        app:layout_constraintEnd_toStartOf="@+id/confirmOrder"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtotal"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/subtaxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="315dp"
+        android:text="@string/totalText"
+        app:layout_constraintBottom_toTopOf="@+id/totalWithTax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tax"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="161dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="596dp"
+        android:text="@string/title"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:ignore="TextSizeCheck" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

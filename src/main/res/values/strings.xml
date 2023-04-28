@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">project5</string>
+    <string name="textview">Rutgers Cafe!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="orderCoffee">Order Coffee</string>
+    <string name="coffee">coffee</string>
+    <string name="donutsTextView">Order Donut</string>
+    <string name="donuts">donut</string>
+    <string name="basket">basket</string>
+    <string name="orderBasket">Your Basket</string>
+    <string name="list">Order List</string>
+    <string name="storeOrders">Confirm Orders</string>
+    <string name="cream">sweetCream</string>
+    <string name="irishCream">irishCream</string>
+    <string name="frenchVanila">frenchVanila</string>
+    <string name="caramel">caramel</string>
+    <string name="mocha">mocha</string>
+    <string name="subTotal">subTotal</string>
+    <string name="tax">tax</string>
+    <string name="confirmOrder">Place The Order</string>
+    <string name="YourTotal">Your Total</string>
+    <string name="cartImage">Cart Image</string>
+    <string name="subtotalText">subtotal</string>
+    <string name="taxText">Sales tax</string>
+    <string name="totalText">Your Total</string>
+    <string name="title">Your Order</string>
+    <string name="storeTitle">Store Order</string>
+    <string name="placetheOrder">PLACE THE ORDER</string>\
+    <string name="addToOrder">ADD TO ORDER</string>
+    <string name="orderDonut">ORDER DONUT</string>
+    <string name="dash">-</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="back">BACK</string>
+    <string name="number">0</string>
+
+
+    <string name="addCoffee">ADD</string>
+    <string name="donutimages">donutImages</string>
+    <string-array name="coffeesize">
+        <item>short</item>
+        <item>tall</item>
+        <item>grande</item>
+        <item>venti</item>
+    </string-array>
+
+    <string-array name="donutQuantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+</resources>
